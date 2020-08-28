@@ -9,7 +9,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        button1.isEnabled = true
-        button1.isActivated = false
+        val buttons = listOf(button1, button2, button3, button4, button5, button6)
+
+        switch1.setOnCheckedChangeListener { _, _ ->
+            buttons.forEach { it.isEnabled = it.isEnabled.not() }
+        }
+
+
     }
 }
