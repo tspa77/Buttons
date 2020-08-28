@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--    default-->
+<!--    <color name="colorPrimary">#6200EE</color>-->
+<!--    <color name="colorPrimaryDark">#3700B3</color>-->
+<!--    <color name="colorAccent">#03DAC5</color>-->
+
+
+
+<!--    project-->
+
+    <color name="colorPrimary">#008C95</color>
+    <color name="colorLine">#E6E8F2</color>
+
+<!--    <color name="colorAccent">#03DAC5</color>-->
+
+    <color name="colorBgWhite">#FFFFFF</color>
+    <color name="colorBgDark">#1B4C59</color>
+    <color name="colorBgSecondary">#EDEFF2</color>
+    <color name="colorBgLightSecondary">#F8F8FB</color>
+
+    <color name="colorText">#001122</color>
+    <color name="colorWhiteText">#FFFFFF</color>
+    <color name="colorTextSecondary">#747680</color>
+    <color name="colorPlaceholderText">#BBBBCC</color>
+
+    <color name="colorImgGreen">#33BBBB</color>
+    <color name="colorRed">#EA483E</color>
+    <color name="colorOrange">#F08130</color>
+
+</resources>

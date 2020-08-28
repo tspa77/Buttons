@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBgDark"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Primary Normal"
+            android:textColor="@color/colorRed"
+            android:textSize="18sp" />
+
+        <FrameLayout
+            android:id="@+id/container1"
+            style="@style/ContainerForButton">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button1"
+                style="@style/Material.PrimaryButton"
+                android:text="Создать групповой чат" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Primary Disabled"
+            android:textColor="@color/colorRed"
+            android:textSize="18sp" />
+
+
+        <FrameLayout
+            android:id="@+id/container2"
+            style="@style/ContainerForButton">
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/Material.PrimaryButton.Disabled"
+                android:text="Нельзя создать чат" />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Secondary Normal"
+            android:textColor="@color/colorRed"
+            android:textSize="18sp" />
+
+        <FrameLayout
+            android:id="@+id/container3"
+            style="@style/ContainerForButton">
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/Material.SecondaryButton"
+                android:text="Создать групповой чат" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Secondary Disabled"
+            android:textColor="@color/colorRed"
+            android:textSize="18sp" />
+
+        <FrameLayout
+            android:id="@+id/container4"
+            style="@style/ContainerForButton">
+
+            <Button
+                android:id="@+id/button4"
+                style="@style/Material.SecondaryButton.Disabled"
+                android:text="Нельзя создать чат" />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Secondary Disabled with icon"
+            android:textColor="@color/colorRed"
+            android:textSize="18sp" />
+
+        <FrameLayout
+            android:id="@+id/container5"
+            style="@style/ContainerForButton">
+
+            <Button
+                android:id="@+id/button5"
+                style="@style/Material.SecondaryButton.Icon"
+                android:text="Создать групповой чат"
+                app:icon="@drawable/ic_group_2" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Secondary Disabled with icon"
+            android:textColor="@color/colorRed"
+            android:textSize="18sp" />
+
+        <FrameLayout
+            android:id="@+id/container6"
+            style="@style/ContainerForButton">
+
+            <Button
+                android:id="@+id/button6"
+                style="@style/Material.SecondaryButton.Disabled"
+                android:text="Нельзя создать чат" />
+        </FrameLayout>
+
+    </LinearLayout>
+</ScrollView>

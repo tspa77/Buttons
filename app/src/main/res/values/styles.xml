@@ -1,0 +1,67 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--                <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--                <item name="colorAccent">@color/colorAccent</item>-->
+    </style>
+
+
+    <!--    Figma Button Themes   -->
+
+    <style name="ContainerForButton" parent="Widget.Design.ScrimInsetsFrameLayout">
+        <item name="android:layout_height">76dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/colorBgWhite</item>
+    </style>
+
+    <style name="Material.PrimaryButton" parent="@style/Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="backgroundTint">@drawable/btn_primary_background</item>
+        <item name="android:textColor">@drawable/btn_primary_text</item>
+        <item name="android:layout_height">62dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textAppearance">@style/TextButtons</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginTop">7dp</item>
+        <item name="android:state_activated">true</item>
+        <item name="android:state_enabled">true</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="Material.PrimaryButton.Disabled" parent="Material.PrimaryButton">
+        <item name="android:enabled">false</item>
+    </style>
+
+    <style name="Material.SecondaryButton" parent="Material.PrimaryButton">
+        <item name="backgroundTint">@drawable/btn_secondary_background</item>
+        <item name="android:textColor">@drawable/btn_secondary_text</item>
+        <item name="android:enabled">true</item>
+    </style>
+
+    <style name="Material.SecondaryButton.Disabled" parent="Material.SecondaryButton">
+        <item name="android:textColor">@drawable/btn_secondary_text</item>
+        <item name="android:enabled">false</item>
+    </style>
+
+    <style name="Material.SecondaryButton.Icon" parent="Material.PrimaryButton">
+        <item name="backgroundTint">@drawable/btn_secondary_background</item>
+        <item name="android:textColor">@drawable/btn_secondary_text</item>
+        <item name="android:enabled">true</item>
+
+<!--        <item name="iconTint">textColor</item>-->
+        <item name="iconGravity">textStart</item>
+
+
+    </style>
+
+    <!--    Text style for Button Themes   -->
+    <style name="TextButtons">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/sf_ui_text_semi_bold</item>
+        <item name="fontFamily">@font/sf_ui_text_semi_bold</item>
+    </style>
+
+</resources>
