@@ -38,7 +38,7 @@
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button1"
                 style="@style/Material.PrimaryButton"
-                android:text="Создать групповой чат" />
+                android:text="setStylePrimary to 5 button" />
         </FrameLayout>
 
         <TextView
@@ -55,7 +55,7 @@
             <Button
                 android:id="@+id/button2"
                 style="@style/Material.PrimaryButton.Disabled"
-                android:text="Нельзя создать чат" />
+                android:text="setStyleSecondary to 5 button" />
         </FrameLayout>
 
         <TextView
