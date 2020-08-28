@@ -35,7 +35,6 @@
         <FrameLayout
             android:id="@+id/container1"
             style="@style/ContainerForButton">
-
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button1"
                 style="@style/Material.PrimaryButton"
@@ -53,12 +52,10 @@
         <FrameLayout
             android:id="@+id/container2"
             style="@style/ContainerForButton">
-
             <Button
                 android:id="@+id/button2"
                 style="@style/Material.PrimaryButton.Disabled"
                 android:text="Нельзя создать чат" />
-
         </FrameLayout>
 
         <TextView
@@ -72,7 +69,6 @@
         <FrameLayout
             android:id="@+id/container3"
             style="@style/ContainerForButton">
-
             <Button
                 android:id="@+id/button3"
                 style="@style/Material.SecondaryButton"
@@ -90,12 +86,10 @@
         <FrameLayout
             android:id="@+id/container4"
             style="@style/ContainerForButton">
-
             <Button
                 android:id="@+id/button4"
                 style="@style/Material.SecondaryButton.Disabled"
                 android:text="Нельзя создать чат" />
-
         </FrameLayout>
 
         <TextView
@@ -109,7 +103,6 @@
         <FrameLayout
             android:id="@+id/container5"
             style="@style/ContainerForButton">
-
             <Button
                 android:id="@+id/button5"
                 style="@style/Material.SecondaryButton"
@@ -128,7 +121,6 @@
         <FrameLayout
             android:id="@+id/container6"
             style="@style/ContainerForButton">
-
             <Button
                 android:id="@+id/button6"
                 style="@style/Material.SecondaryButton.Disabled"
