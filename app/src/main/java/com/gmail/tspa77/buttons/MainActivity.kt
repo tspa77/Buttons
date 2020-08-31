@@ -1,7 +1,6 @@
 package com.gmail.tspa77.buttons
 
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -10,47 +9,23 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val buttons = listOf(button3, button4, button5, button6)
+        val buttons = listOf(button1, button2, button3, button4, button5, button6)
 
         switch1.setOnCheckedChangeListener { _, _ ->
-
             buttons.forEach { it.isEnabled = it.isEnabled.not() }
-            Toast.makeText(
-                baseContext,
-                "button5.isEnabled = ${button5.isEnabled}",
-                Toast.LENGTH_SHORT
-            ).show()
+            updateStatus()
         }
 
-        button1.isEnabled = true
-        button1.setOnClickListener {
-            button5.setStylePrimary()
-            Toast.makeText(
-                baseContext,
-                "button5.isEnabled = ${button5.isEnabled}",
-                Toast.LENGTH_SHORT
-            ).show()
-        }
-
-        button2.isEnabled = true
-        button2.setOnClickListener {
-            button5.setStyleSecondary()
-            Toast.makeText(
-                baseContext,
-                "button5.isEnabled = ${button5.isEnabled}",
-                Toast.LENGTH_SHORT
-            ).show()
-        }
-
+        updateStatus()
 
     }
+
+    private fun updateStatus() {
+        tv_status_1.text = "button1.isEnabled = ${button1.isEnabled}"
+        tv_status_2.text = "button2.isEnabled = ${button2.isEnabled}"
+        tv_status_3.text = "button3.isEnabled = ${button3.isEnabled}"
+        tv_status_4.text = "button4.isEnabled = ${button4.isEnabled}"
+        tv_status_5.text = "button5.isEnabled = ${button5.isEnabled}"
+        tv_status_6.text = "button6.isEnabled = ${button6.isEnabled}"
+    }
 }
-
-
-//            Toast.makeText(this, "Button 2 isActivated = ${it.isActivated}", Toast.LENGTH_SHORT)
-//                .show()
-
-
-//            button2.isActivated = button2.isActivated.not()
-//            Toast.makeText(this, "Button 2 isActivated = ${button2.isActivated}", Toast.LENGTH_SHORT)
-//                .show()

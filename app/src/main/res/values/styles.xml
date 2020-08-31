@@ -9,13 +9,20 @@
 
 
     <!--    Figma Button Themes   -->
-
     <style name="ContainerForButton" parent="Widget.Design.ScrimInsetsFrameLayout">
         <item name="android:layout_height">76dp</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:background">@color/colorBgWhite</item>
     </style>
 
+    <!--    Text style for Button Themes   -->
+    <style name="TextButtons">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/sf_ui_text_semi_bold</item>
+        <item name="fontFamily">@font/sf_ui_text_semi_bold</item>
+    </style>
+
+    <!--    Dynamic Button Themes   -->
     <style name="Material.PrimaryButton" parent="@style/Widget.MaterialComponents.Button.UnelevatedButton">
         <item name="backgroundTint">@color/btn_primary_background</item>
         <item name="android:textColor">@color/btn_primary_text</item>
@@ -34,30 +41,38 @@
         <item name="iconTint">@color/btn_primary_text</item>
     </style>
 
-    <style name="Material.PrimaryButton.Disabled" parent="Material.PrimaryButton">
-        <item name="android:enabled">false</item>
-        <item name="iconTint">@color/btn_primary_text</item>
-    </style>
-
     <style name="Material.SecondaryButton" parent="Material.PrimaryButton">
         <item name="backgroundTint">@color/btn_secondary_background</item>
         <item name="android:textColor">@color/btn_secondary_text</item>
-        <item name="android:enabled">true</item>
         <item name="iconTint">@color/btn_secondary_text</item>
     </style>
 
-    <style name="Material.SecondaryButton.Disabled" parent="Material.SecondaryButton">
-        <item name="android:textColor">@color/btn_secondary_text</item>
-        <item name="android:enabled">false</item>
-        <item name="iconTint">@color/btn_secondary_text</item>
+    <!--    Static Button Themes   -->
+    <style name="Material.PrimaryButton.EnabledPermanent" parent="Material.PrimaryButton">
+        <item name="backgroundTint">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorWhiteText</item>
+        <item name="iconTint">@color/colorWhiteText</item>
+    </style>
+
+    <style name="Material.PrimaryButton.DisabledPermanent" parent="Material.PrimaryButton">
+        <item name="backgroundTint">@color/colorPlaceholderText</item>
+        <item name="android:textColor">@color/colorWhiteText</item>
+        <item name="iconTint">@color/colorWhiteText</item>
+    </style>
+
+    <style name="Material.SecondaryButton.EnabledPermanent" parent="Material.PrimaryButton">
+        <item name="backgroundTint">@color/colorBgSecondary</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="iconTint">@color/colorPrimary</item>
+    </style>
+
+    <style name="Material.SecondaryButton.DisabledPermanent" parent="Material.PrimaryButton">
+        <item name="backgroundTint">@color/colorBgSecondary</item>
+        <item name="android:textColor">@color/colorPlaceholderText</item>
+        <item name="iconTint">@color/colorPlaceholderText</item>
     </style>
 
 
-    <!--    Text style for Button Themes   -->
-    <style name="TextButtons">
-        <item name="android:textSize">18sp</item>
-        <item name="android:fontFamily">@font/sf_ui_text_semi_bold</item>
-        <item name="fontFamily">@font/sf_ui_text_semi_bold</item>
-    </style>
+
 
 </resources>
