@@ -7,13 +7,9 @@
 <!--    <color name="colorAccent">#03DAC5</color>-->
 
 
-
-<!--    project-->
-
+    <!--    Figma Colors   -->
     <color name="colorPrimary">#008C95</color>
     <color name="colorLine">#E6E8F2</color>
-
-<!--    <color name="colorAccent">#03DAC5</color>-->
 
     <color name="colorBgWhite">#FFFFFF</color>
     <color name="colorBgDark">#1B4C59</color>
@@ -28,5 +24,6 @@
     <color name="colorImgGreen">#33BBBB</color>
     <color name="colorRed">#EA483E</color>
     <color name="colorOrange">#F08130</color>
+    <!--    End Figma Colors   -->
 
 </resources>

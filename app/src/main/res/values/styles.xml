@@ -8,7 +8,9 @@
     </style>
 
 
-    <!--    Figma Button Themes   -->
+    <!--    ********** Figma Button Themes **********   -->
+
+    <!--    Container for Button -->
     <style name="ContainerForButton" parent="Widget.Design.ScrimInsetsFrameLayout">
         <item name="android:layout_height">72dp</item>
         <item name="android:layout_width">match_parent</item>
@@ -76,5 +78,6 @@
         <item name="iconTint">@color/colorPlaceholderText</item>
     </style>
 
+    <!--    ********** End Figma Button Themes **********   -->
 
 </resources>

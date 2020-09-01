@@ -6,7 +6,7 @@
     android:id="@+id/root_activity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBgWhite"
+    android:background="@color/colorBgDark"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -14,8 +14,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/ll_button_container"
         android:layout_width="match_parent"
-        android:elevation="0dp"
         android:layout_height="match_parent"
+        android:elevation="0dp"
         android:orientation="vertical">
 
         <com.google.android.material.switchmaterial.SwitchMaterial
@@ -152,11 +152,11 @@
                 app:icon="@drawable/ic_group_2" />
         </FrameLayout>
 
-        <View
-            android:id="@+id/view1"
-            android:layout_width="42dp"
-            android:layout_height="42dp"
-            app:layout_constraintTop_toBottomOf="@+id/container5" />
+        <!--        <View
+                    android:id="@+id/view1"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    app:layout_constraintTop_toBottomOf="@+id/container5" />-->
 
         <TextView
             android:id="@+id/tv_status_6"
@@ -168,24 +168,23 @@
             android:text="SecondaryButton. DisabledPermanent"
             android:textColor="@color/colorRed"
             android:textSize="14sp"
-            app:layout_constraintBottom_toTopOf="@+id/container6"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view1" />
+            app:layout_constraintTop_toBottomOf="@+id/container5" />
 
-        <View
-            android:id="@+id/view2"
-            android:layout_width="match_parent"
-            android:layout_height="42dp"
-            app:layout_constraintTop_toTopOf="@+id/container6" />
+        <!--        <View
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    app:layout_constraintTop_toTopOf="@+id/container6" />-->
 
         <FrameLayout
-            android:elevation="10000dp"
             android:id="@+id/container6"
             style="@style/ContainerForButton"
+            android:elevation="10000dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view2">
+            app:layout_constraintTop_toBottomOf="@+id/tv_status_6">
 
             <Button
                 android:id="@+id/button6"
@@ -193,6 +192,7 @@
                 android:text="Нельзя создать чат"
                 app:icon="@drawable/ic_group_2" />
         </FrameLayout>
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
